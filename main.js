@@ -7,11 +7,11 @@ var alertSuccess=document.getElementById('alertSuccess');
 var alertDanger=document.getElementById('alertDanger');
 var alertExist=document.getElementById('alertExist');
 var clientsArray;
-if(localStorage.length==0){
-    clientsArray=[];
+if(localStorage.getItem('clients')!=null){
+    clientsArray=JSON.parse(localStorage.getItem('clients'));
 }
 else{
-    clientsArray=JSON.parse(localStorage.getItem('clients'));
+clientsArray=[];
 }
 var myInputValues={
     nameValue:nameInput.value,
@@ -71,3 +71,4 @@ signupBtn.addEventListener('click',function () {
     }
 }
 })
+
