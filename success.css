@@ -1,0 +1,70 @@
+.top-35{
+    top: 35%;
+}
+a{
+    color: inherit !important;
+}
+.mynav{
+    h1{
+        font-size: 24px;
+        font-weight: 300;
+    }
+    button:hover{
+        color: white !important;
+
+    }
+}
+.login{
+    background-color: #24353F;
+    .login-item{
+        
+        box-shadow: 0 0 20px 15px;
+    h2{
+        color:#17a2b8;
+        font-size: 40px;
+    }
+    ::placeholder{
+        color: #A8B6B6;
+        font-weight: 600;
+    }
+    
+    input {
+  caret-color: white;
+  color: white;
+}
+.login-btn{
+    border: #17a2b8 solid 2px;
+    color: #17a2b8;
+    transition: 0.5s;
+    &:hover{
+        color: white;
+        background-color: #17a2b8 !important;
+    }
+}
+}
+}
+@media (min-width:500px){
+    .login-item{
+        width: 95%;
+    }
+    
+}
+
+@media (min-width:720px){
+    .login-item{
+        width: 80%;
+    }
+    
+}
+
+@media (min-width:1000px){
+    .login-item{
+        width: 70%;
+    }
+    
+}
+@media (min-width:1400px){
+    .login-item{
+        width: 55%;
+    }
+}

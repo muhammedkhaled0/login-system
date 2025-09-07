@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>sign uP</title>
+</head>
+<body>
+   <main>
+    <section class="vh-100 login overflow-auto" id="login">
+        <div class="container mt-5 p-5 text-center login-item">
+            <h1>Smart Login System</h1>
+            <form action="" id="myform">
+                          <div class="mb-3">
+  <input type="text" class="form-control bg-transparent shadow-none py-2 mb-3" id="nameInput" placeholder="Enter your name">
+</div>
+            <div class="mb-3">
+  <input type="email" class="form-control bg-transparent shadow-none py-2 mb-3" id="emailInput" placeholder="Enter your email">
+</div>
+            <div class="mb-3">
+  <input type="password" class="form-control bg-transparent shadow-none py-2" id="passwordInput" placeholder="Enter your password">
+</div>
+<div class=" text-danger mb-4 d-none" id="alertExist">Tha email already exist</div>
+<div class=" text-success mb-4 d-none" id="alertSuccess">Success</div>
+<div class=" text-danger mb-4 d-none" id="alertDanger">The Name Should 5-20 character the Email must be valid one and the password must be greater than or equal 8, contains capital and small letters,numbers and special characters</div>
+<button id="signupBtn" type="submit" class="login-btn w-100 text-center bg-transparent py-2 rounded-2">Sign Up</button>
+<div class="text-white mt-3 mb-4">You have an account? <a href="login.html" class="text-decoration-none">Sign in</a></div>
+</form>
+        </div>
+    </section>
+   </main>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
